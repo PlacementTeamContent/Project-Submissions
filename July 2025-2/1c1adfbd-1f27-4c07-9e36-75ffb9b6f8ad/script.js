@@ -1,0 +1,1 @@
+let calculate grade =document.getElementById("calculateGrade");
