@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grams Converter</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grams Converter</h1>
+
+        <div class="calculator">
+            <div class="input-group">
+                <label for="grams">Enter Grams:</label>
+                <input type="number" id="grams" placeholder="Enter weight in grams">
+            </div>
+
+            <div class="operations">
+                <button id="convertToKg" onclick="kiloconvert()">Convert to Kilograms</button>
+                <button id="convertToLbs " onclick="poundsconvert">Convert to Pounds</button>
+            </div>
+
+            <div class="result-container">
+                <h2>Result: <span id="result">-</span></h2>
+                <p id="calculation-steps">Enter the grams and click the appropriate button to convert.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
