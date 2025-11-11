@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        :root {
+            --border-color: #CBD5E1;
+            --primary-variant: #f6faff;
+        }
+        body {
+            font-family: "Roboto", serif;
+            background-color: var(--primary-variant);
+            margin: 0;
+            padding: 3vw 7vw 0vw 7vw;
+        }
+        .container {
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 14px;
+            margin: 22px 0;
+            background: white;
+        }
+        .block-heading {
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 10px;
+            padding-left: 2px;
+            letter-spacing: 1px;
+        }
+        .q-container {
+            margin-bottom: 28px;
+        }
+        .index {
+            font-weight: bold;
+            font-size: 15px;
+            min-width: 33px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 4px;
+        }
+        .question-main {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 37px);
+        }
+        .question {
+            padding: 9px 8px 9px 8px;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 15px;
+            white-space: pre-line;
+            word-break: break-word;
+            margin-bottom: 7px;
+        }
+        .code-row {
+            display: flex;
+            gap: 16px;
+            width: 100%;
+        }
+        .code-box {
+            background: #f1f1f1;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            font-size: 13px;
+            overflow-x: auto;
+            width: 100%;
+            min-width: 0;
+            flex: 1 1 0;
+        }
+        .code-title {
+            font-weight: bold;
+            font-size: 13px;
+            margin: 7px 0 0 11px;
+            color: #7c7c7c;
+        }
+        pre { margin: 0; }
+        @media screen and (max-width: 800px) {
+            .code-row {
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: black; margin-bottom:28px;">MAHESH BABU BASINENI</h1>
+    </header>
+    
+    <!-- EASY SECTION -->
+    <section class="container ">
+        <div class="block-heading">Easy</div>
+        
+        <div class="q-container">
+            <div class="index">1.</div>
+            <div class="question-main">
+                <div class="question"><pre><h3>Product Page</h3>
+<p>Build a clean, interactive application inspired by the Output. Use HTML, CSS and Bootstrap to replicate the design layout, sections and Functionality.</p>
+<p>Strive to match your code output with expected output at the given dimensions.</p>
+<p><MultiLineNote>
+- Use settings icon to adjust the height and width before you start writing your code.
+- On clicking <strong>Visual Test</strong>, 'Final Score' is calculated by comparing your 'Code Output' with
+'Expected Output' only at given dimensions.
+- Use the <strong>bootstrap class names</strong> for text colors, background-colors and button styles.
+- Your code will be registered only after clicking <strong>Submit</strong> button.</MultiLineNote></p>
+<hr />
+<p><strong>Expected Output</strong>:</p>
+<p>Image dimension(1280x1385)</p>
+<div style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width: 80%"><Img imageSrc="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-mp4videos-april28/Product+Page.png" widthPercent="100"/></div>
+
+<p><strong>Functionality </strong>:</p>
+<div style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width: 80%"><Img imageSrc="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-mp4videos-april28/Product+Page+gif.gif" widthPercent="100"/></div>
+
+<hr />
+<p><strong>Use the image URLs given below:</strong></p>
+<p><img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-gif/product-1.jpeg" alt="Product 1" title="Click to learn more about Virtual Reality Games" height="100" width="150" />
+https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-gif/product-1.jpeg</p>
+<p><img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-gif/place-1.webp" alt="Place 1" class="place-img" title="Click to learn more about this place" height="100" width="150" />
+https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-gif/place-1.webp</p>
+<hr />
+<p><MultiLineQuickTip>
+<strong>Functionality Description:</strong></p>
+<ul>
+<li>
+<p>Create a div container with id=Navcontainer which should contain exactly three anchor tags with href attributes values # products, # places, and # contact.  </p>
+</li>
+<li>
+<p>Create a div container with id=products which should contain one <h1> element, two <p> elements describing the products, and one <img> element showcasing a product.  </p>
+</li>
+<li>
+<p>Create a div container with the id=places. </p>
+</li>
+<li>Inside this container, it should consists of <h1> tag,  <p> tag, two <a> tags( i.e one <a> should contain <img> tag and another <a> shoud contain text such as Read More).</li>
+<li>Inside this container, Create one more  div container having id=place1 and it  should consists of <h1> tag and <p> tag.</li>
+<li>
+<p>when the user clicks on the ancher <img> element or <a> text Read more it should navigate to the container which is having id=place1.</p>
+</li>
+<li>
+<p>Create a div container with id=contact which should contain one <h1> element as the section heading and one <p> element providing contact information.</p>
+</li>
+</ul>
+<p></MultiLineQuickTip></p>
+<hr />
+<p><strong>CSS Colors Used:</strong></p>
+<ul>
+<li><div style="background-color: # E3F2FD; width: 150px; padding: 10px; color: black; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);"># E3F2FD</div></li>
+<li><div style="background-color: # 007bff; width: 150px; padding: 10px; color: black; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);"># 007bff</div></li>
+<li><div style="background-color: # FFFFFF; width: 150px; padding: 10px; color: black; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);"># FFFFFF</div></li>
+<li><div style="background-color: # f9f9f9; width: 150px; padding: 10px; color: black; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);"># f9f9f9</div></li>
+</ul>
+<hr />
+<p><strong>Font Family:</strong></p>
+<ul>
+<li>Roboto</li>
+</ul>
+<hr />
+<p><strong>Technologies</strong>:</p>
+<p>Technologies to be used to achieve the above assigmment:</p>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+</ul>
+<hr /></pre></div>
+                <div class="code-row">
+                    <div class="code-box">
+                        <div class="code-title">HTML Code</div>
+                        <pre><code class="language-html"></code></pre>
+                    </div>
+                    <div class="code-box">
+                        <div class="code-title">CSS Code</div>
+                        <pre><code class="language-css"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Repeat the below block for Medium and Hard sections, analogous to the EASY block above -->
+    <section class="container hide">
+        <div class="block-heading">Medium</div>
+        
+    </section>
+    <section class="container hide">
+        <div class="block-heading">Hard</div>
+        
+    </section>
+    <footer style="height: 36px;"></footer>
+</body>
+</html>
