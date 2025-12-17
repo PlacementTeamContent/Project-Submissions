@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <!-- Include Highlight.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <!-- Enable Highlighting -->
+    <script>hljs.highlightAll();</script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root {
+            --dark-red: #FF5733;
+            --dark-yellow: #FFC300;
+            --dark-green: #28A745;
+
+            --light-red: #fdd9ca;
+            --light-yellow: #fff8ce;
+            --light-green: #d1ffde;
+
+            --primary-color: #2565ED;
+            --primary-variant: #f6faff;
+            --border-color: #CBD5E1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        .no-scrollbar {
+            overflow: auto; /* Enable scrolling */
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+
+        body {
+            margin: 0;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 2vw;
+            padding-bottom: 0vw;
+            font-family: "Roboto", serif;
+            color: black;
+            background-color: var(--primary-variant);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        ol {
+            list-style-position: inside;
+            list-style-type: decimal-leading-zero;
+        }
+
+        li {
+            line-height: 1.6;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .text-red {
+            color: var(--dark-red);
+        }
+
+        .text-yellow {
+            color: var(--dark-yellow);
+        }
+
+        .text-green {
+            color: var(--dark-green);
+        }
+
+        .border{
+            border: 1px solid var(--border-color) !important;
+            border-radius: 10px;
+        }
+
+        .container {
+            border: 1px solid var(--border-color) !important;
+            border-radius: 30px;
+            width: auto;
+            height: fit-content;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: white;
+        }
+
+        .block-heading {
+            font-weight: bold;
+            font-size: large;
+            margin-left: 10px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .block-sub-heading {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .center {
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .index{
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .question{
+            height: auto;
+            margin: 10px;
+            white-space: pre;
+            padding: 10px;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        .question pre{
+            white-space: normal;
+            word-wrap: break-word;
+            line-height: 1.5;
+            font-family: "Roboto", serif;
+        }
+
+        .code{
+            height: auto;
+            margin: 10px;
+            white-space: pre;
+            overflow-x: scroll;
+            background: #e1e2e3;
+        }
+
+        pre{
+            min-height: 100%;
+        }
+        code{
+            min-height: 100%;
+            display:inline;
+        }
+
+        .grid-container {
+            width: auto;
+            height: fit-content;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 30px 1fr 1fr;
+        }
+
+        @media screen and (max-width:600px) {
+
+            body {
+                padding-top: 5vh;
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .item {
+                grid-template-columns: auto;
+            }
+
+            .progress-bar {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .circular-progress-container {
+                margin: 0px;
+                row-gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 style="color: black; margin-bottom:20px;">HEMANTH BISWALL</h1>
+    </header>
+
+    <!-- EASY QUESTIONS SECTION -->
+    <section class="container ">
+        <div class="block-heading">Easy</div>
+        <div class="grid-container">
+            
+                <div class="index no-scrollbar">1.</div>
+                <div class="question border no-scrollbar"><pre><h3>GadgetWorld</h3>
+<p><strong>Objective</strong>:</p>
+<p>In this assignment, you have to build a GadgetWorld Registration Page by applying JavaScript functionality to the prefilled HTML and CSS.</p>
+<p><strong>Refer to the below video.</strong></p>
+<video width="320" height="240" controls>
+<source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/placement-happenings/webcoding-gif/4c22b274-71f6-4955-9bc8-c07f1bd56861.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<p><br/></p>
+<hr />
+<p><MultiLineWarning>
+    - Don't edit the prefilled code. Just apply JavaScript functionality to the prefilled HTML and CSS to make the website dynamic.
+    - Use settings icon to adjust the width to 1200px before you start writing your code.
+</MultiLineWarning></p>
+<hr />
+<p>By following the below instructions, achieve the JavaScript functionality.</p>
+<ul>
+<li>When the Submit button is clicked:</li>
+<li>If the email input does not contain @gmail.com then the text content of the element having id="errorMsg" should display the text "*Please Enter Valid Email"</li>
+<li>If the Mobile Number input does not contain 10 digits then the text content of the element having id="errorMsg" should display the text "*Please Enter Valid Mobile No."</li>
+<li>If the length of the Password input less than the 8, then the text content of the element having id="errorMsg" should display the text "*Please Enter Valid Password"</li>
+<li>If the password in the Password input field not match with the Confirm Password input field then the text content of the element having id="errorMsg" should display the text "*Passwords do not match. Please re-enter."</li>
+<li>If the Captcha input does not match with the generated captcha then the text content of the element having id="errorMsg" should display the text "*Please Enter Valid Captcha"</li>
+<li>When the button with class='capcha-btn' is clicked, a five digit captcha should be displayed in the paragraph element with the id="capchaNumber."</li>
+<li>When the Submit button is clicked and user enters all the valid data then the container with id="mainContainer" should be hide and the container with the id="successContainer" should be visible.</li>
+</ul>
+<hr/></pre></div>
+                <div class="code border no-scrollbar"><pre><code class="language-python">let nameE1=document.getElementById(&#34;name&#34;)
+let emailE1=document.getElementById(&#34;email&#34;)
+let Errormess=document.getElementById(&#34;errorMsg&#34;)
+
+let countryE1=document.getElementById(&#34;country&#34;)
+let mobileE1=document.getElementById(&#34;mobile&#34;)
+let maleE1=document.getElementById(&#34;genderMale&#34;)
+let female=document.getElementById(&#34;genderFemale&#34;)
+let butt=document.getElementById(&#34;submitBtn&#34;)
+let passwordE1=document.getElementById(&#34;password&#34;)
+let conformE1=document.getElementById(&#34;conformPassword&#34;)
+let capchaNumberE1=document.getElementById(&#34;capchaNumber&#34;)
+let randomE1=math.random((math.ceil())*100)
+
+a=&#34;@gmail.com&#34;
+captchaBtn().function(){
+    if (capchaNumber!= randomE1 ){
+        Errormess.textContent= &#39;*Please Enter Valid Captcha&#39;
+    }
+    else{
+        Errormess.textContent=&#34;&#34;
+    }
+}
+ 
+    
+
+    if (emailE!=a){
+        Errormess.textcontent=&#34;*Please Enter Valid Email&#34;;
+        
+    }
+    else{
+        Errormess.textcontent=&#34;&#34;;
+    }
+if (parseInt(8) === parseInt(passwordE1.length)) {
+        Errormess.textContent=&#34;&#34;;
+        
+    }
+else{
+        Errormess.textContent=&#34;*Please Enter Valid Password&#34;;
+    }
+    
+    
+if (mobileE1===parseInt(length(10))) {
+        Errormess.textContent=&#34;&#34;;
+        
+    }
+    else{
+        Errormess.textContent=&#34;*Please Enter Valid Mobile No.&#34;;
+    }</code></pre></div>
+            
+        </div>
+    </section>
+
+    <!-- MEDIUM QUESTIONS SECTION -->
+    <section class="container hide">
+        <div class="block-heading">Medium</div>
+        <div class="grid-container">
+            
+        </div>
+    </section>
+
+    <!-- HARD QUESTIONS SECTION -->
+    <section class="container hide">
+        <div class="block-heading">Hard</div>
+        <div class="grid-container">
+            
+        </div>
+    </section>
+
+    <footer style="height: 50px;">
+
+    </footer>
+    <!-- Include Prism.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+
+</html>
