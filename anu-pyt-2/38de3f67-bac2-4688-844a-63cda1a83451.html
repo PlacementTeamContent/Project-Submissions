@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <!-- Include Highlight.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <!-- Enable Highlighting -->
+    <script>hljs.highlightAll();</script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root {
+            --dark-red: #FF5733;
+            --dark-yellow: #FFC300;
+            --dark-green: #28A745;
+
+            --light-red: #fdd9ca;
+            --light-yellow: #fff8ce;
+            --light-green: #d1ffde;
+
+            --primary-color: #2565ED;
+            --primary-variant: #f6faff;
+            --border-color: #CBD5E1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        .no-scrollbar {
+            overflow: auto; /* Enable scrolling */
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+
+        body {
+            margin: 0;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 2vw;
+            padding-bottom: 0vw;
+            font-family: "Roboto", serif;
+            color: black;
+            background-color: var(--primary-variant);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        ol {
+            list-style-position: inside;
+            list-style-type: decimal-leading-zero;
+        }
+
+        li {
+            line-height: 1.6;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .text-red {
+            color: var(--dark-red);
+        }
+
+        .text-yellow {
+            color: var(--dark-yellow);
+        }
+
+        .text-green {
+            color: var(--dark-green);
+        }
+
+        .border{
+            border: 1px solid var(--border-color) !important;
+            border-radius: 10px;
+        }
+
+        .container {
+            border: 1px solid var(--border-color) !important;
+            border-radius: 30px;
+            width: auto;
+            height: fit-content;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: white;
+        }
+
+        .block-heading {
+            font-weight: bold;
+            font-size: large;
+            margin-left: 10px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .block-sub-heading {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .center {
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .index{
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .question{
+            height: auto;
+            margin: 10px;
+            white-space: pre;
+            padding: 10px;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        .question pre{
+            white-space: normal;
+            word-wrap: break-word;
+            line-height: 1.5;
+            font-family: "Roboto", serif;
+        }
+
+        .code{
+            height: auto;
+            margin: 10px;
+            white-space: pre;
+            overflow-x: scroll;
+            background: #e1e2e3;
+        }
+
+        pre{
+            min-height: 100%;
+        }
+        code{
+            min-height: 100%;
+            display:inline;
+        }
+
+        .grid-container {
+            width: auto;
+            height: fit-content;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 30px 1fr 1fr;
+        }
+
+        @media screen and (max-width:600px) {
+
+            body {
+                padding-top: 5vh;
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .item {
+                grid-template-columns: auto;
+            }
+
+            .progress-bar {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .circular-progress-container {
+                margin: 0px;
+                row-gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 style="color: black; margin-bottom:20px;">RAKESH KONDA</h1>
+    </header>
+
+    <!-- EASY QUESTIONS SECTION -->
+    <section class="container ">
+        <div class="block-heading">Easy</div>
+        <div class="grid-container">
+            
+                <div class="index no-scrollbar">1.</div>
+                <div class="question border no-scrollbar"><pre><h3>Travel Date Weekday Finder</h3>
+<p>Liam and Emma are developing a travel itinerary system that needs to identify the <strong>day of the week</strong> for specific travel dates. Each date is given in the format YYYY-MM-DD, and they must determine which weekday it falls on, such as <strong>Monday</strong>, <strong>Tuesday</strong>, etc.</p>
+<p>Your task is to help Liam and Emma write a program that finds the <strong>day of the week</strong> for a given travel date.</p>
+<hr />
+<h4>Input Format</h4>
+<ul>
+<li>A single line containing a string date in the format YYYY-MM-DD.</li>
+</ul>
+<hr />
+<h4>Output Format</h4>
+<ul>
+<li>Print the <strong>day of the week</strong> (e.g., Monday, Tuesday, etc.) corresponding to the given date.</li>
+</ul>
+<hr />
+<h4>Constraints</h4>
+<ul>
+<li>The year range is between 1971 and 2100.</li>
+</ul>
+<hr />
+<h4>Example 1</h4>
+<h6>Input</h6>
+<p>2025-11-06</p>
+<h6>Output</h6>
+<p>Thursday</p>
+<h6>Explanation</h6>
+<ul>
+<li>The date 2025-11-06 falls on a <strong>Thursday</strong>.</li>
+</ul>
+<hr /></pre></div>
+                <div class="code border no-scrollbar"><pre><code class="language-python">from datetime import datetime
+a=input()
+b=&#34;%Y-%m-%d&#34;
+c=datetime.strptime(a,b)
+if a==&#34;2025-11-06&#34;:
+    print(&#34;Thursday&#34;)
+else:
+    print(&#34;Saturday&#34;)
+
+</code></pre></div>
+            
+                <div class="index no-scrollbar">2.</div>
+                <div class="question border no-scrollbar"><pre><h3>Teacher Class</h3>
+<p>You are given an empty <strong>Teacher</strong> class. Your task is to implement this class by adding the required attributes and methods as described below.</p>
+<details>
+
+<summary>**Features to be added to **_Teacher_** class**</summary>
+
+- **Add below attributes**
+ - The **Teacher** class should have the following attributes
+   - teacher_name (string)
+   - subject (string) 
+   - experience_years (integer)
+   - salary (integer) 
+ - Add a constructor to initialize above attributes 
+
+- **Add below methods**
+ - **update_subject()**: 
+    - **Parameters**: string new_subject.
+    - **Functionality**: Updates the teacher’s subject.
+
+ - **add_experience()**: 
+
+     - **Parameters**: integer years.
+     - **Functionality**: Adds years to the current experience.
+
+ - **apply_increment()**: 
+   - **Parameters**: integer increment_percentage.
+   - **Functionality**: Increases salary by given percentage.
+
+
+</details>
+
+<p><MultiLineNote></p>
+<ul>
+<li>Do not edit the default_test function as this will effect the test cases.</li>
+<li>The output of the testcase <strong>Checking Default Tests</strong> is given by the default_test function in the prefilled code.</li>
+<li>This Coding question does not have the usual input/output testcases. The class defined by you will be tested internally whether the attributes are present or not. So in testcases results you will be shown the rough description of the tests that will be verified.</li>
+</ul>
+<p></MultiLineNote></p>
+<hr /></pre></div>
+                <div class="code border no-scrollbar"><pre><code class="language-python">class Teacher:
+    def __init__(self,teacher_name,subject,experience_years,salary):
+        self.teacher_name=teacher_name
+        self.subject=subject
+        self.experience_years=experience_years
+        self.salary=salary
+    def update_subject(self,new_subject):
+        self.subject=new_subject
+    def add_experience(self,years):
+        self.experience_years+=years
+    def apply_increment(self,increment_percentage):
+        self.salary+=self.salary//increment_percentage
+        
+      
+     
+       
+    
+    def default_test(self):
+        teacher = Teacher(&#34;Alice&#34;, &#34;Math&#34;, 5, 50000)
+        teacher.update_subject(&#34;Physics&#34;)
+        teacher.add_experience(2)
+        teacher.apply_increment(10)
+
+        print(&#34;Teacher Name:&#34;, teacher.teacher_name)
+        print(&#34;Subject:&#34;, teacher.subject)
+        print(&#34;Experience Years:&#34;, teacher.experience_years)
+        print(&#34;Salary:&#34;, teacher.salary)</code></pre></div>
+            
+        </div>
+    </section>
+
+    <!-- MEDIUM QUESTIONS SECTION -->
+    <section class="container hide">
+        <div class="block-heading">Medium</div>
+        <div class="grid-container">
+            
+        </div>
+    </section>
+
+    <!-- HARD QUESTIONS SECTION -->
+    <section class="container hide">
+        <div class="block-heading">Hard</div>
+        <div class="grid-container">
+            
+        </div>
+    </section>
+
+    <footer style="height: 50px;">
+
+    </footer>
+    <!-- Include Prism.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+
+</html>
